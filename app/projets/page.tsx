@@ -21,6 +21,7 @@ export default function PageProjets() {
                   categorie={projet.categorie}
                   resume={projet.resume}
                   misEnAvant={projet.misEnAvant}
+                  href={`/projets/${projet.slug}`}
                 />
               ))}
       </div>

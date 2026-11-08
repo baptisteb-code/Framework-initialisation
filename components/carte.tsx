@@ -1,4 +1,5 @@
 import BoutonJaime from "./bouton-jaime"
+import Link from "next/link"  
 
 
 type Props={
@@ -6,9 +7,10 @@ type Props={
     categorie: string,
     resume: string,
     misEnAvant?: boolean
+    href?: string
 }
 
-export default function Carte({ titre, resume, categorie, misEnAvant }: Props) {
+export default function Carte({ titre, resume, categorie, misEnAvant, href }: Props) {
   return (
     <article className="rounded-lg border border-neutral-200 p-5">
       {misEnAvant && (
@@ -22,6 +24,7 @@ export default function Carte({ titre, resume, categorie, misEnAvant }: Props) {
       <div className="mt-4">
         <BoutonJaime />
       </div>
+      {href ? <Link href={href}>{titre}</Link> : titre}
     </article>
   )   
 }
