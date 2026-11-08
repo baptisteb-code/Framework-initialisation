@@ -14,7 +14,7 @@ export const PROJETS: Projet[] =[
   {id : 3, slug: "pub-babe", titre: "Pub Babe", description:"Mon équipe et moi avons imaginé une approche promotionnelle humoristique et décalée autour du short à 3 ceintures de la marque (B)ABE.", resume: "Campagne publicitaire pour Babe", categorie: "Audiovisuel", misEnAvant: true},
   {id : 4, slug: "to-do-list", titre: "To Do List", description:"Pour m'entrainer au JS, j'ai créé une application de gestion de tâches.", resume: "Application de gestion de tâches", categorie: "Dev", misEnAvant: false},
   {id : 5, slug: "scene-medieval", titre: "Scène Médiéval", description:"Dans le cadre des semaines de cours de 3D, nous avons créé une scènes médiévale.", resume: "Scène théâtrale médiévale", categorie: "3D", misEnAvant: false},
-  {id : 6, slug: "scene-architecture", titre: "Scène Architecture", description:"Dans le cadre des semaines de cours de 3D, nous avons créé LUMIERE, le célèbre personnage dans La Belle et la Bête.", resume: "Création du personnage LUMIERE", categorie: "3D", misEnAvant: true}
+  {id : 6, slug: "scene-architecture", titre: "Scène Architecture", description:"Dans le cadre des semaines de cours de 3D, nous avons créé un salon.", resume: "Création d'un salon", categorie: "3D", misEnAvant: true}
 ]
   
 
