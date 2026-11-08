@@ -19,12 +19,11 @@ export default function Carte({ titre, resume, categorie, misEnAvant, href }: Pr
         </span>
       )}
       <p className="text-xs uppercase text-neutral-500">{categorie}</p>
-      <h3 className="mt-1 font-semibold">{titre}</h3>
+      <h3 className="mt-1 font-semibold">{href ? <Link href={href}>{titre}</Link> : titre}</h3>
       <p className="mt-2 text-sm text-neutral-600">{resume}</p>
       <div className="mt-4">
         <BoutonJaime />
       </div>
-      {href ? <Link href={href}>{titre}</Link> : titre}
     </article>
   )   
 }
