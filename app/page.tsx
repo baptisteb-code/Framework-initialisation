@@ -15,9 +15,9 @@ type Question ={
 }
 
 const QUESTIONS: Question[] =[
-  {id : 1, question: "Quels sont vos engagements écoresponsables ? ⮛", reponse:"Nous réduisons activement notre empreinte carbone en optimisant nos emballages, en choisissant des partenaires éthiques et en favorisant des circuits logistiques plus verts."},
-  {id : 2, question: "Prévoyez-vous de nouveautés prochainement ? ⮛", reponse:"Oui ! Nous développons constamment de nouveaux produits et services. Inscrivez-vous à notre newsletter pour découvrir nos prochains lancements en avant-première."},
-  {id : 3, question: "Comment utilisez-vous les avis clients pour évoluer ? ⮛", reponse:"Vos retours sont essentiels. Nous analysons chaque suggestion pour perfectionner notre catalogue et adapter nos futurs projets à vos besoins réels."}
+  {id : 1, question: "Qui es-tu ? ⮛", reponse:"Je m’appelle Baptiste, je suis étudiant à l’IIM Digital School à Paris, et je mélange graphisme, vidéo et développement web."},
+  {id : 2, question: "Quels types de projets réalises-tu ? ⮛", reponse:"Je réalise des sites et applications web, des visuels, des publicités vidéo et des scènes 3D."},
+  {id : 3, question: "Où puis-je voir plus de tes projets ? ⮛", reponse:"Sur la page Projets, avec une fiche détaillée pour chaque réalisation."}
 ]
 
 export default function Accueil(){
