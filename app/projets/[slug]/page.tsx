@@ -20,6 +20,7 @@ export default async function PageProjet({ params }: Props) {
     <article className="py-12">
       <p className="text-xs uppercase text-neutral-500">{projet.categorie}</p>
       <h1 className="mt-2 text-4xl font-semibold">{projet.titre}</h1>
+      <h2 className="mt-2 text-sm text-neutral-500">{projet.date}</h2>
       {projet.image && (
         <Image
           src={projet.image}
