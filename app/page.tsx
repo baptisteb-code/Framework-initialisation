@@ -8,20 +8,6 @@ import { PROJETS } from "@/data/projets"
 
 
 
-// type Projet ={
-//   id: number,
-//   titre: string,
-//   resume: string, 
-//   categorie: string
-// }
-
-
-// const PROJETS: Projet[] =[
-//   {id : 1, titre: "Kinizy", resume:"identité visuelle", categorie: "Dev"},
-//   {id : 2, titre: "Pub Nike", resume:"identité visu", categorie: "Audiovisuel"},
-//   {id : 3, titre: "Pub Babe", resume:"identité visuelle", categorie: "Audiovisuel"}
-// ]
-
 type Question ={
   id: number,
   question: string,
@@ -41,12 +27,13 @@ export default function Accueil(){
     <Hero
       titre="Mon portfolio"
       texte="Bienvenue sur mon portfolio, où je partage mes projets et réalisations. Explorez mes travaux et découvrez mon univers créatif."
+      avecBouton
     />
 
     <Section titre="Mes projets">
 
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {PROJETS.map((projet) => (
+        {PROJETS.slice(0,3).map((projet) => (
           <Carte
             key={projet.id}
             titre={projet.titre}
@@ -56,8 +43,9 @@ export default function Accueil(){
           />
         ))}
       </div>
-
-      <Bouton label="voir plus" href="/projet" variante="plein"></Bouton>
+      <div className="mt-8">
+        <Bouton label="Voir plus" href="/projet" ></Bouton>
+      </div>
 
     </Section>
 
